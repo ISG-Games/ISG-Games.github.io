@@ -5,6 +5,8 @@
  * URL: https://freehtml5.co
  */
 /* Fonts */
+#id1{color:hotpink;}
+
 @font-face {
   font-family: 'Calisto-MT';
   src: url(../fonts/Calisto-MT.ttf); }
