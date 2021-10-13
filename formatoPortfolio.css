@@ -1,5 +1,7 @@
-h1{text-align:center;}
-h2{font-family:fantasy;}
-#id1{background-color:rgb(28, 144, 148);}
-.class1{color:greenyellow;}
-#idp b{color:hotpink}
+h1{text-align:center;background-color:teal;color:yellowgreen;}
+h2{font-family:fantasy;text-align:center;color:teal;}
+p{font-weight: bold;}
+mark{font-size:xx-large;background-color:teal;color:yellowgreen;}
+body{background-color:yellowgreen;}
+li{font-size:large;}
+#id1 a{background-color: teal;}
