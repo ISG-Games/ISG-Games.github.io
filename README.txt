@@ -1,3 +1,3 @@
-# VJ1202 Informática Básica
-## Examen final Pregunta 2
-### Iván Safón
+# VJ1202 InformÃ¡tica BÃ¡sica
+## Examen Final Pregunta 2
+### IvÃ¡n SafÃ³n
