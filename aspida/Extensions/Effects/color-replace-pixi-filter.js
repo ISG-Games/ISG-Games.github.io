@@ -1,0 +1,2 @@
+var gdjs;(function(t){t.PixiFiltersTools.registerFilterCreator("ColorReplace",{makePIXIFilter:function(r,e){return new PIXI.filters.ColorReplaceFilter},updatePreRender:function(r,e){},updateDoubleParameter:function(r,e,o){const l=r;e==="epsilon"&&(l.epsilon=o)},updateStringParameter:function(r,e,o){const l=r;e==="originalColor"?l.originalColor=t.PixiFiltersTools.rgbOrHexToHexNumber(o):e==="newColor"&&(l.newColor=t.PixiFiltersTools.rgbOrHexToHexNumber(o))},updateBooleanParameter:function(r,e,o){}})})(gdjs||(gdjs={}));
+//# sourceMappingURL=color-replace-pixi-filter.js.map
