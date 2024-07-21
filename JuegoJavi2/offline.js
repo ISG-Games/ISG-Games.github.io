@@ -1,0 +1,31 @@
+﻿{
+	"version": 1721575044,
+	"fileList": [
+		"data.js",
+		"c2runtime.js",
+		"jquery-2.1.1.min.js",
+		"offlineClient.js",
+		"images/tu-sheet0.png",
+		"images/tu-sheet1.png",
+		"images/suelo-sheet0.png",
+		"images/misil-sheet0.png",
+		"images/bases-sheet0.png",
+		"images/fin-sheet0.png",
+		"images/finalarcoiris-sheet0.png",
+		"images/llave1-sheet0.png",
+		"images/llave2-sheet0.png",
+		"images/barrera2-sheet0.png",
+		"images/barrera1-sheet0.png",
+		"images/money-sheet0.png",
+		"images/money-sheet1.png",
+		"images/money2-sheet0.png",
+		"images/llavemala1-sheet0.png",
+		"images/llavemala2-sheet0.png",
+		"icon-16.png",
+		"icon-32.png",
+		"icon-114.png",
+		"icon-128.png",
+		"icon-256.png",
+		"loading-logo.png"
+	]
+}
