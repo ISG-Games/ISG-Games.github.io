@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\HISTORIAL"
+    "\\historial",
+    "\\historial\\assets",
+    "\\historial\\assets\\css"
   ],
-  "SelectedNode": "\\HISTORIAL\\index.html",
+  "SelectedNode": "\\historial\\assets\\css\\main.css",
   "PreviewInSolutionExplorer": false
 }

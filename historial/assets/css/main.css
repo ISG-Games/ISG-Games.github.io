@@ -892,8 +892,14 @@ input, select, textarea {
 		}
 
 		.image.filtered.tinted:after {
-			background-image: url("../../imagesMias/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25)), linear-gradient(0deg, rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125));
-			background-size: 128px 128px, auto, auto;
+			background-image: url("../../imagesMias/overlay.png"),
+			linear-gradient(45deg,
+			rgba(114, 97, 147, 0.05) 25%,
+			rgba(227, 123, 124, 0.05) 50%,
+			rgba(255, 228, 180, 0.05)),
+			linear-gradient(0deg,
+			rgba(0, 0, 0, 0.1),
+			rgba(0, 0, 0, 0.1));
 		}
 
 		.image[data-position] img {
@@ -2545,6 +2551,10 @@ input, select, textarea {
 
 		.panel.medium {
 			width: 50rem;
+		}
+
+		.panel.custom {
+			width: 58.5rem;
 		}
 
 		.panel.large {
