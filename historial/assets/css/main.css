@@ -2556,6 +2556,15 @@ input, select, textarea {
 		.panel.custom {
 			width: 58.5rem;
 		}
+		.panel.custom2 {
+			width: 42rem;
+		}
+		.panel.barraCustom {
+			width: 22rem;
+		}
+		.panel.barraCustom2 {
+			width: 31rem;
+		}
 
 		.panel.large {
 			width: 65rem;
