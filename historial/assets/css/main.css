@@ -2566,6 +2566,10 @@ input, select, textarea {
 			width: 31rem;
 		}
 
+		.panel.barraCustom3 {
+			width: 1rem;
+		}
+
 		.panel.large {
 			width: 65rem;
 		}
