@@ -3589,7 +3589,8 @@ input, select, textarea {
 		cursor: default;
 		position: relative;
 		height: 32rem;
-		/*box-shadow: 0 2rem 4rem 0.25rem rgba(46, 43, 55, 0.575);*/
+
+		border: 5px solid #EEEEEE;
 	}
 
 		#wrapper > .scrollZone {
