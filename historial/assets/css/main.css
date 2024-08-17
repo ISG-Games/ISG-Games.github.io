@@ -2567,11 +2567,24 @@ input, select, textarea {
 		.panel.custom2 {
 			width: 42rem;
 		}
+
+		.panel.custom3 {
+			width: 63rem;
+		}
+
+		.panel.custom4 {
+			width: 56rem;
+		}
+
 		.panel.barraCustom {
 			width: 22rem;
 		}
 		.panel.barraCustom2 {
 			width: 31rem;
+		}
+
+		.panel.barraCustomRPG {
+			width: 36rem;
 		}
 
 		.panel.barraCustom3 {
