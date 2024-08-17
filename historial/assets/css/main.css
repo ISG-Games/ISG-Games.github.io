@@ -1641,6 +1641,14 @@ input, select, textarea {
 			color: #2e2b37 !important;
 		}
 
+			input[type="submit"].primary.colorCustom,
+			input[type="reset"].primary.colorCustom,
+			input[type="button"].primary.colorCustom,
+			button.primary.colorCustom,
+			.button.primary.colorCustom {
+				color: black !important;
+			}
+
 			input[type="submit"].primary.color1,
 			input[type="reset"].primary.color1,
 			input[type="button"].primary.color1,
@@ -1678,7 +1686,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #ffe4b4;
+				background-color: #C2FFF6;
 			}
 
 			input[type="submit"].primary:active,
@@ -1686,7 +1694,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #fdd997;
+				background-color: #80FFEC;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
