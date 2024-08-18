@@ -1625,10 +1625,10 @@ input, select, textarea {
 		input[type="button"].large,
 		button.large,
 		.button.large {
-			font-size: 0.8rem;
-			height: 3.3125rem;
-			line-height: 3.3125rem;
-			padding: 0 2rem 0 2.15rem;
+			font-size: 1.5rem;
+			height: 3rem;
+			line-height: 3rem;
+			padding: 0 4rem 0 4rem;
 		}
 
 		input[type="submit"].primary,
