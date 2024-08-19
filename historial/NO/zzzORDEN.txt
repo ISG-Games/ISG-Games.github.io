@@ -1,12 +1,10 @@
-REVISAR FECHAS
-
 Ruby-2022
 
 Aspida-2022
 
 Libertad DS-2023
 
-Covid Ninja- 2023 Main Artist And Programmer
+Covid Ninja- 2023 Artist And Programmer
 
 Eat the fear 2023 Artist
 
@@ -17,3 +15,5 @@ Tables Turn 2024 Artist
 	Motores Solo Dev
 
 	Tetris Artist
+
+REVISAR TEXTOS + FLECHAS
