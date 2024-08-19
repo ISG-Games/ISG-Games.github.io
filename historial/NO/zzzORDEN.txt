@@ -12,8 +12,10 @@ Cinctorres- 2024 Artist and Programmer
 
 Tables Turn 2024 Artist
 
+Tetris JAM 2024 Artist
+
 	Motores Solo Dev
 
-	Tetris Artist
+REVISAR TEXTOS + FLECHAS + ASPIDA u otros buenpos en ITHCIO
 
-REVISAR TEXTOS + FLECHAS
+FINAL + BOTON VOLVER
