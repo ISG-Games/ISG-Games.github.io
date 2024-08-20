@@ -2581,7 +2581,7 @@ input, select, textarea {
 		}
 
 		.panel.barraCustom {
-			width: 22rem;
+			width: 24rem;/*Era 22*/
 		}
 		.panel.barraCustom2 {
 			width: 31rem;
