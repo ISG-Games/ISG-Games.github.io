@@ -2595,6 +2595,10 @@ input, select, textarea {
 			width: 1rem;
 		}
 
+		.panel.customROTAR {
+			width: 200rem;
+		}
+
 		.panel.large {
 			width: 65rem;
 		}
