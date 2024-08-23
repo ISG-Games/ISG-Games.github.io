@@ -16,8 +16,8 @@
 	<body class="is-preload">
 
 		<!-- PANEL ROTAR -->
-			<div id="panelROTAR" style="display:none;">
-				<img src="videos/panelROTAR.png" alt="ROTA EL MOVIL"/>
+			<div id="panelROTAR" style="display:none;" data-position="center">
+				<img width="100%" src="videos/screen-rotate.png" alt="SCREEN ROTATE"/>
 			</div>
 
 		<!-- Page Wrapper -->
@@ -768,6 +768,8 @@
 
 						<!-- Copyright -->
 							<div style="color:#EEEEEE;" class="copyright">&copy; Ethereal. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
+							<div style="color:#EEEEEE;" class="copyright">&copy; Ethereal. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
+							<a href="https://www.flaticon.com/free-icons/screen-rotate" title="screen rotate icons">Screen rotate icons created by Flipicon - Flaticon</a>
 
 					</div>
 
@@ -780,6 +782,8 @@
 			<script src="assets/js/main.js"></script>
 
 			<script>
+				let orientacionCorrecta = true;
+
 				let navegador = navigator.userAgent;
 				console.log("Device: "+navegador);
 				let rotar = document.getElementById("panelROTAR");
@@ -787,8 +791,8 @@
 
 				if(esMovil()){
 					console.log("Mobile");
-					window.addEventListener("orientationchange", detectarTODO());
-					detectarTODO();
+					detectarORIENTACION();
+					window.addEventListener("orientationchange", function(){cambiarORIENTACION();} );
 				}
 				else{
 					console.log("No mobile");
@@ -813,15 +817,28 @@
 					rotar.style.display="none";
 					pagina.style.display="flex";
 				}
-				function detectarTODO(){
-					console.log("Detecting orientation")
+				function detectarORIENTACION(){
 					if(screen.availHeight > screen.availWidth){
+						console.log("Detecting orientation: Portrait");
+						ponerPANEL();
+						orientacionCorrecta=false;
+					}
+					else{
+						console.log("Detecting orientation: Landscape");
+						quitarPANEL();
+						orientacionCorrecta=true;
+					}
+				}
+				function cambiarORIENTACION(){
+					if(orientacionCorrecta){
 						console.log("Portrait");
 						ponerPANEL();
+						orientacionCorrecta=false;
 					}
 					else{
 						console.log("Landscape");
 						quitarPANEL();
+						orientacionCorrecta=true;
 					}
 				}
 			</script>
