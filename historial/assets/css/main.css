@@ -3647,7 +3647,7 @@ input, select, textarea {
 
 		#wrapper > .copyright {
 			position: absolute;
-			bottom: -3rem;
+			bottom: -4rem;
 			right: 0;
 			font-size: 0.8rem;
 			color: rgba(46, 43, 55, 0.375);
