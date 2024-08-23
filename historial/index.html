@@ -15,22 +15,16 @@
 	</head>
 	<body class="is-preload">
 
+		<!-- PANEL ROTAR -->
+			<div id="panelROTAR" style="display:none;">
+				<img src="videos/panelROTAR.png" alt="ROTA EL MOVIL"/>
+			</div>
+
 		<!-- Page Wrapper -->
 			<div id="page-wrapper" style="background-color:black;cursor:crosshair">
 
 				<!-- Wrapper -->
 					<div id="wrapper">
-
-						<!-- PANEL ROTAR -->
-						<section class="panel spotlight large center" style="background-color:black;" id="panelROTAR1">
-								<div class="content span-7">
-								<img src="videos/panelROTAR.png" alt="ROTA EL MOVIL"/>
-								</div>
-
-							</section>
-
-							<section class="panel spotlight customROTAR left" style="background-color:black;" id="panelROTAR2"> </section>
-							<section class="panel spotlight barraCustom3 left" style="background-color:#EEEEEE;" id="panelROTAR3"> </section>
 
 						<!-- PANEL INICIAL -->
 						<section class="panel spotlight large center" style="background-color:black;" id="ivan0">
@@ -788,21 +782,19 @@
 			<script>
 				let navegador = navigator.userAgent;
 				console.log("Device: "+navegador);
-			
-				let elem1 = document.getElementById("panelROTAR1");
-				let elem2 = document.getElementById("panelROTAR2");
-				let elem3 = document.getElementById("panelROTAR3");
-				if(esMobil()){
+				let rotar = document.getElementById("panelROTAR");
+				let pagina = document.getElementById("page-wrapper");
+
+				if(esMovil()){
 					console.log("Mobile");
+					window.addEventListener("orientationchange", detectarTODO());
+					detectarTODO();
 				}
 				else{
 					console.log("No mobile");
-
-					elem1.style.display="none";
-					elem2.style.display="none";
-					elem3.style.display="none";
 				}
-				function esMobil(){
+
+				function esMovil(){
 					return navigator.userAgent.match(/Android/i) ||
 						   navigator.userAgent.match(/iPad/i) ||
 						   navigator.userAgent.match(/webOs/i) ||
@@ -810,7 +802,28 @@
 						   navigator.userAgent.match(/iPhone/i) ||
 						   navigator.userAgent.match(/BlackBerry/i) ||
 						   navigator.userAgent.match(/Windows Phone/i)
-				};
+				}
+				function ponerPANEL(){
+					//rotar.style.visibility="visible";
+					rotar.style.display="flex";
+					pagina.style.display="none";
+				}
+				function quitarPANEL(){
+					//rotar.style.visibility="hidden";
+					rotar.style.display="none";
+					pagina.style.display="flex";
+				}
+				function detectarTODO(){
+					console.log("Detecting orientation")
+					if(screen.availHeight > screen.availWidth){
+						console.log("Portrait");
+						ponerPANEL();
+					}
+					else{
+						console.log("Landscape");
+						quitarPANEL();
+					}
+				}
 			</script>
 
 	</body>
