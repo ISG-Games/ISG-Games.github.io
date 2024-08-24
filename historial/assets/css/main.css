@@ -215,8 +215,9 @@ input, select, textarea {
 			height: 100%;
 			z-index: -1;
 			background-attachment: fixed;
-			background-color: #e1e6e1;
-			/*background-image: url("../../imagesMias/overlay.png"), url("../../imagesMias/bg.jpg");
+			background-color: black;
+			/*background-color: #e1e6e1;
+			background-image: url("../../imagesMias/overlay.png"), url("../../imagesMias/bg.jpg");
 			background-repeat: repeat, repeat-x;
 			background-size: 128px 128px, cover;*/
 		}
@@ -2561,6 +2562,9 @@ input, select, textarea {
 			width: 50rem;
 		}
 
+		.panel.customGaleria {
+			width: 60rem;
+		}
 		.panel.custom {
 			width: 58.5rem;
 		}
