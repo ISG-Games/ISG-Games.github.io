@@ -1978,6 +1978,10 @@ input, select, textarea {
 
 	}
 
+	.bordecito{
+		border: 2px solid #EEEEEE;
+	}
+
 	@media screen and (max-width: 736px) {
 
 		.gallery {
@@ -2157,7 +2161,9 @@ input, select, textarea {
 			.gallery .group .span-10 {
 				width: 333.3333%;
 			}
-
+			.gallery .group .span-20 {
+				width: 666.6666%;
+			}
 			.gallery .group .image {
 				height: 20rem;
 			}
@@ -2563,7 +2569,7 @@ input, select, textarea {
 		}
 
 		.panel.customGaleria {
-			width: 60rem;
+			width: 30rem;
 		}
 		.panel.custom {
 			width: 58.5rem;
@@ -2582,6 +2588,10 @@ input, select, textarea {
 
 		.panel.custom5 {
 			width: 65.5rem;
+		}
+
+		.panel.barraAspida {
+			width: 36rem;
 		}
 
 		.panel.barraCustom {
