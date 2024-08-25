@@ -2597,6 +2597,9 @@ input, select, textarea {
 		.panel.barraCustom {
 			width: 24rem;/*Era 22*/
 		}
+		.panel.barraCustomMedia {
+			width: 12rem;
+		}
 		.panel.barraCustom2 {
 			width: 31rem;
 		}
