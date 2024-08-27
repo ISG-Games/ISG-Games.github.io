@@ -2600,6 +2600,9 @@ input, select, textarea {
 		.panel.barraCustomMedia {
 			width: 12rem;
 		}
+		.panel.barraCustomPeque {
+			width: 6rem;
+		}
 		.panel.barraCustomEnorme {
 			width: 84rem;
 		}
@@ -3663,6 +3666,19 @@ input, select, textarea {
 
 			#wrapper > .scrollZone.right {
 				right: 0;
+			}
+
+			#wrapper > .publicidad {
+			position: absolute;
+			bottom: -4rem;
+			left: 0;
+			font-size: 0.8rem;
+			color: rgba(46, 43, 55, 0.375);
+			margin-bottom: 0;
+		}
+
+			#wrapper > .publicidad a:hover {
+				color: inherit;
 			}
 
 		#wrapper > .copyright {
