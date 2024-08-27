@@ -1817,10 +1817,10 @@ input, select, textarea {
 			}
 
 			.gallery .image:hover img {
-				-moz-transform: scale(1.025);
-				-webkit-transform: scale(1.025);
-				-ms-transform: scale(1.025);
-				transform: scale(1.025);
+				-moz-transform: scale(1.1);
+				-webkit-transform: scale(1.1);
+				-ms-transform: scale(1.1);
+				transform: scale(1.1);
 			}
 
 			.gallery .image:hover:after {
@@ -2590,7 +2590,7 @@ input, select, textarea {
 			width: 65.5rem;
 		}
 
-		.panel.barraAspida {
+		.panel.barraPortfolio {
 			width: 36rem;
 		}
 
@@ -2599,6 +2599,9 @@ input, select, textarea {
 		}
 		.panel.barraCustomMedia {
 			width: 12rem;
+		}
+		.panel.barraCustomEnorme {
+			width: 84rem;
 		}
 		.panel.barraCustom2 {
 			width: 31rem;
