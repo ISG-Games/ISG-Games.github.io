@@ -2600,6 +2600,9 @@ input, select, textarea {
 		.panel.barraCustomMedia {
 			width: 12rem;
 		}
+		.panel.barraBotones {
+			width: 18rem;
+		}
 		.panel.barraCustomPeque {
 			width: 6rem;
 		}
