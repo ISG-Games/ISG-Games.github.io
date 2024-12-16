@@ -2622,6 +2622,10 @@ input, select, textarea {
 			width: 1rem;
 		}
 
+		.panel.barraCustom33 {
+			width: 0.4rem;
+		}
+
 		.panel.customROTAR {
 			width: 200rem;
 		}
