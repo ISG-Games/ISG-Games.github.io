@@ -26,7 +26,7 @@
 				<!-- Wrapper -->
 					<div id="wrapper">
 
-						<div style="color:#AAAAAA;" class="publicidad">
+						<div id="ivan0" style="color:#AAAAAA;" class="publicidad">
 							ISG-Games: <a target="_blank" href="https://isg-games.itch.io/">ITCH.IO</a>, 
 							<a target="_blank" href="https://gamejolt.com/@ISG_Games">GAMEJOLT</a>, 
 							<a target="_blank" href="https://www.instagram.com/isg.games/">INSTAGRAM</a>
@@ -38,7 +38,7 @@
 
 							<section class="panel spotlight barraCustomPeque left" style="background-color:black;"> </section>
 
-							<section class="panel spotlight custom2" style="background-color:black;" id="ivan0">
+							<section class="panel spotlight custom2" style="background-color:black;">
 								<div class="content span-7">
 									<h4>Portfolio</h4>
 									<h1 class="major">ISG Games</h1>
@@ -50,7 +50,7 @@
 							</section>
 
 							<section class="panel spotlight barraBotones align-center" style="background-color:black;border: 2px solid #EEEEEE;">
-								<div class="content span-7">
+								<div class="content span-7" id="botonColumna1">
 									<img style="border: 2px solid #EEEEEE;" src="zMisAssets/B_Aspida.png" width="100%" alt="Aspida"/>
 									<ul class="actions" style="margin:0 auto;margin-top:10px;">
 										<li><a onclick="activarAspida()" href="#ivanAspida" class="button primary colorCustom circle icon solid fa-angle-right">Aspida</a></li>
@@ -63,7 +63,7 @@
 								</div>
 							</section>
 							<section class="panel spotlight barraBotones align-center" style="background-color:black;border: 2px solid #EEEEEE;">
-								<div class="content span-7">
+								<div class="content span-7" id="botonColumna2">
 									<img style="border: 2px solid #EEEEEE;" src="zMisAssets/B_Fear.png" width="100%" alt="Fear"/>
 									<ul class="actions" style="margin:0 auto;margin-top:10px;">
 										<li><a onclick="activarFear()" href="#ivanFear" class="button primary colorCustom circle icon solid fa-angle-right">Fear</a></li>
@@ -76,7 +76,7 @@
 								</div>
 							</section>
 							<section class="panel spotlight barraBotones align-center" style="background-color:black;border: 2px solid #EEEEEE;">
-								<div class="content span-7">
+								<div class="content span-7" id="botonColumna3">
 									<img style="border: 2px solid #EEEEEE;" src="zMisAssets/B_Table.png" width="100%" alt="Table"/>
 									<ul class="actions" style="margin:0 auto;margin-top:10px;">
 										<li><a onclick="activarTable()" href="#ivanTable" class="button primary colorCustom circle icon solid fa-angle-right">Table</a></li>
@@ -85,6 +85,19 @@
 									<img style="border: 2px solid #EEEEEE;" src="zMisAssets/B_Tetris.png" width="100%" alt="Tetris"/>
 									<ul class="actions" style="margin:0 auto;margin-top:10px;">
 										<li><a onclick="activarTetris()" href="#ivanTetris" class="button primary colorCustom circle icon solid fa-angle-right">Tetris</a></li>
+									</ul>
+								</div>
+							</section>
+							<section class="panel spotlight barraBotones align-center" style="background-color:black;border: 2px solid #EEEEEE;">
+								<div class="content span-7" id="botonColumna4">
+									<img style="border: 2px solid #EEEEEE;" src="zMisAssets/B_TrickOrTreat.png" width="100%" alt="TrickOrTreat"/>
+									<ul class="actions" style="margin:0 auto;margin-top:10px;">
+										<li><a onclick="activarTrickOrTreat()" href="#ivanTrickOrTreat" class="button primary colorCustom circle icon solid fa-angle-right">Table</a></li>
+									</ul>
+									<br>
+									<img style="border: 2px solid #EEEEEE;" src="zMisAssets/B_Alimentos.png" width="100%" alt="Alimentos"/>
+									<ul class="actions" style="margin:0 auto;margin-top:10px;">
+										<li><a onclick="activarAlimentos()" href="#ivanAlimentos" class="button primary colorCustom circle icon solid fa-angle-right">Tetris</a></li>
 									</ul>
 								</div>
 							</section>
@@ -116,7 +129,7 @@
 							</section>
 
 							<section class="cosasAspida panel spotlight barraPortfolio align-center" style="background-color:black;">
-								<div class="content span-7" id="ivanAspida">
+								<div class="content span-7">
 
 									<!-- TEXTO -->
 									<p><b>SOLO DEV</b> - GDEVELOP - PC, WEB - <b>2022</b></p>
@@ -125,14 +138,14 @@
 									<p></p>
 									<!-- VOLVER -->
 									<ul class="actions" style="margin:0 auto;">
-										<li><a onclick="desactivarAspida()" href="#ivan0" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
+										<li><a onclick="desactivarAspida()" href="#botonColumna1" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
 									</ul>
 
 								</div>
 							</section>
 
 							<section class="cosasAspida panel spotlight barraCustomMedia left" style="background-color:black;"> </section>
-							<section class="cosasAspida panel spotlight barraCustom3 left" style="background-color:#EEEEEE;"> </section>
+							<section class="cosasAspida panel spotlight barraCustom3 left" style="background-color:#EEEEEE;" id="ivanAspida"> </section>
 
 							<!-- ----------------------------------PANEL-2------------------------------------>
 
@@ -151,7 +164,7 @@
 							</section>
 
 							<section class="cosasCovid panel spotlight barraPortfolio align-center" style="background-color:black;">
-								<div class="content span-7" id="ivanCovid">
+								<div class="content span-7">
 
 									<!-- TEXTO -->
 									<p><b>ARTIST AND PROGRAMMER</b> - PHASER - WEB - <b>2023</b></p>
@@ -160,14 +173,14 @@
 									<p></p>
 									<!-- VOLVER -->
 									<ul class="actions" style="margin:0 auto;">
-										<li><a onclick="desactivarCovid()" href="#ivan0" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
+										<li><a onclick="desactivarCovid()" href="#botonColumna1" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
 									</ul>
 
 								</div>
 							</section>
 
 							<section class="cosasCovid panel spotlight barraCustomMedia left" style="background-color:black;"> </section>
-							<section class="cosasCovid panel spotlight barraCustom3 left" style="background-color:#EEEEEE;"> </section>
+							<section class="cosasCovid panel spotlight barraCustom3 left" style="background-color:#EEEEEE;" id="ivanCovid"> </section>
 
 							<!-- ----------------------------------PANEL-3------------------------------------>
 
@@ -186,7 +199,7 @@
 							</section>
 
 							<section class="cosasFear panel spotlight barraPortfolio align-center" style="background-color:black;">
-								<div class="content span-7" id="ivanFear">
+								<div class="content span-7">
 
 									<!-- TEXTO -->
 									<p><b>ARTIST</b> - UNITY - PC - <b>2023</b></p>
@@ -195,14 +208,14 @@
 									<p></p>
 									<!-- VOLVER -->
 									<ul class="actions" style="margin:0 auto;">
-										<li><a onclick="desactivarFear()" href="#ivan0" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
+										<li><a onclick="desactivarFear()" href="#botonColumna2" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
 									</ul>
 
 								</div>
 							</section>
 
 							<section class="cosasFear panel spotlight barraCustomMedia left" style="background-color:black;"> </section>
-							<section class="cosasFear panel spotlight barraCustom3 left" style="background-color:#EEEEEE;"> </section>
+							<section class="cosasFear panel spotlight barraCustom3 left" style="background-color:#EEEEEE;" id="ivanFear"> </section>
 
 							<!-- ----------------------------------PANEL-4------------------------------------>
 
@@ -221,7 +234,7 @@
 							</section>
 
 							<section class="cosasCinctorres panel spotlight barraPortfolio align-center" style="background-color:black;">
-								<div class="content span-7" id="ivanCinctorres">
+								<div class="content span-7">
 
 									<!-- TEXTO -->
 									<p><b>ARTIST AND PROGRAMMER</b> - UNITY - PC - <b>2024</b></p>
@@ -230,14 +243,14 @@
 									<p></p>
 									<!-- VOLVER -->
 									<ul class="actions" style="margin:0 auto;">
-										<li><a onclick="desactivarCinctorres()" href="#ivan0" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
+										<li><a onclick="desactivarCinctorres()" href="#botonColumna2" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
 									</ul>
 
 								</div>
 							</section>
 
 							<section class="cosasCinctorres panel spotlight barraCustomMedia left" style="background-color:black;"> </section>
-							<section class="cosasCinctorres panel spotlight barraCustom3 left" style="background-color:#EEEEEE;"> </section>
+							<section class="cosasCinctorres panel spotlight barraCustom3 left" style="background-color:#EEEEEE;" id="ivanCinctorres"> </section>
 
 							<!-- ----------------------------------PANEL-5------------------------------------>
 
@@ -256,7 +269,7 @@
 							</section>
 
 							<section class="cosasTable panel spotlight barraPortfolio align-center" style="background-color:black;">
-								<div class="content span-7" id="ivanTable">
+								<div class="content span-7">
 
 									<!-- TEXTO -->
 									<p><b>ARTIST</b> - UNITY - PC - <b>2024</b></p>
@@ -265,14 +278,14 @@
 									<p></p>
 									<!-- VOLVER -->
 									<ul class="actions" style="margin:0 auto;">
-										<li><a onclick="desactivarTable()" href="#ivan0" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
+										<li><a onclick="desactivarTable()" href="#botonColumna3" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
 									</ul>
 
 								</div>
 							</section>
 
 							<section class="cosasTable panel spotlight barraCustomMedia left" style="background-color:black;"> </section>
-							<section class="cosasTable panel spotlight barraCustom3 left" style="background-color:#EEEEEE;"> </section>
+							<section class="cosasTable panel spotlight barraCustom3 left" style="background-color:#EEEEEE;" id="ivanTable"> </section>
 
 							<!-- ----------------------------------PANEL-6------------------------------------>
 
@@ -291,7 +304,7 @@
 							</section>
 
 							<section class="cosasTetris panel spotlight barraPortfolio align-center" style="background-color:black;">
-								<div class="content span-7" id="ivanTetris">
+								<div class="content span-7">
 
 									<!-- TEXTO -->
 									<p><b>ARTIST</b> - UNITY - PC - <b>2024</b></p>
@@ -300,14 +313,84 @@
 									<p></p>
 									<!-- VOLVER -->
 									<ul class="actions" style="margin:0 auto;">
-										<li><a onclick="desactivarTetris()" href="#ivan0" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
+										<li><a onclick="desactivarTetris()" href="#botonColumna3" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
 									</ul>
 
 								</div>
 							</section>
 
 							<section class="cosasTetris panel spotlight barraCustomMedia left" style="background-color:black;"> </section>
-							<section class="cosasTetris panel spotlight barraCustom3 left" style="background-color:#EEEEEE;"> </section>
+							<section class="cosasTetris panel spotlight barraCustom3 left" style="background-color:#EEEEEE;" id="ivanTetris"> </section>
+
+							<!-- ----------------------------------PANEL-7------------------------------------>
+
+							<section class="cosasTrickOrTreat panel spotlight barraCustomMedia left" style="background-color:black;"> </section>
+
+							<section class="cosasTrickOrTreat panel">
+								<div class="gallery" style="border: 4px solid #EEEEEE;">
+								<!-- GALERIA -->
+									<div class="group span-3">
+										<a href="zMisAssets/21_GIF.gif" class="image filtered span-3 bordecito" data-position="top"><img src="zMisAssets/21_GIF.gif"/></a>
+										<a href="zMisAssets/21_S1.png" class="image filtered span-1 bordecito" data-position="bottom"><img src="zMisAssets/21_S1.png"/></a>
+										<a href="zMisAssets/21_S2.png" class="image filtered span-1 bordecito" data-position="bottom"><img src="zMisAssets/21_S2.png"/></a>
+										<a href="zMisAssets/21_S3.png" class="image filtered span-1 bordecito" data-position="bottom"><img src="zMisAssets/21_S3.png"/></a>
+									</div>
+								</div>
+							</section>
+
+							<section class="cosasTrickOrTreat panel spotlight barraPortfolio align-center" style="background-color:black;">
+								<div class="content span-7">
+
+									<!-- TEXTO -->
+									<p><b>PROGRAMMER</b> - UNITY - PC - <b>2024</b></p>
+									<!-- BOTON -->
+									<iframe frameborder="0" src="https://itch.io/embed/3067209?border_width=5&amp;bg_color=000000&amp;fg_color=ffffff&amp;link_color=ffffff&amp;border_color=ffffff" width="560" height="175"><a href="https://alexc04.itch.io/trick-or-treat-kill-your-beat">Trick or Treat: Kill Your Beat by AlexC04, GameJAMer76, ISG-Games, RaulBM</a></iframe>
+									<p></p>
+									<!-- VOLVER -->
+									<ul class="actions" style="margin:0 auto;">
+										<li><a onclick="desactivarTrickOrTreat()" href="#botonColumna4" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
+									</ul>
+
+								</div>
+							</section>
+
+							<section class="cosasTrickOrTreat panel spotlight barraCustomMedia left" style="background-color:black;"> </section>
+							<section class="cosasTrickOrTreat panel spotlight barraCustom3 left" style="background-color:#EEEEEE;" id="ivanTrickOrTreat"> </section>
+
+							<!-- ----------------------------------PANEL-8------------------------------------>
+
+							<section class="cosasAlimentos panel spotlight barraCustomMedia left" style="background-color:black;"> </section>
+
+							<section class="cosasAlimentos panel">
+								<div class="gallery" style="border: 4px solid #EEEEEE;">
+								<!-- GALERIA -->
+									<div class="group span-3">
+										<a href="zMisAssets/22_GIF.gif" class="image filtered span-3 bordecito" data-position="top"><img src="zMisAssets/22_GIF.gif"/></a>
+										<a href="zMisAssets/22_S1.png" class="image filtered span-1 bordecito" data-position="bottom"><img src="zMisAssets/22_S1.png"/></a>
+										<a href="zMisAssets/22_S2.png" class="image filtered span-1 bordecito" data-position="bottom"><img src="zMisAssets/22_S2.png"/></a>
+										<a href="zMisAssets/22_S3.png" class="image filtered span-1 bordecito" data-position="bottom"><img src="zMisAssets/22_S3.png"/></a>
+									</div>
+								</div>
+							</section>
+
+							<section class="cosasAlimentos panel spotlight barraPortfolio align-center" style="background-color:black;">
+								<div class="content span-7">
+
+									<!-- TEXTO -->
+									<p><b>PROGRAMMER AND ARTIST</b> - UNITY - PC - <b>2024</b></p>
+									<!-- BOTON -->
+									<iframe frameborder="0" src="https://itch.io/embed/3173016?border_width=5&amp;bg_color=000000&amp;fg_color=ffffff&amp;link_color=ffffff&amp;border_color=ffffff" width="560" height="175"><a href="https://isg-games.itch.io/el-libro-magico-de-alimentos">EL LIBRO MÁGICO DE ALIMENTOS by ISG-Games, AlexC04, RaulBM, RoboGooey, Luis Daniel Rosales</a></iframe>
+									<p></p>
+									<!-- VOLVER -->
+									<ul class="actions" style="margin:0 auto;">
+										<li><a onclick="desactivarAlimentos()" href="#botonColumna4" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
+									</ul>
+
+								</div>
+							</section>
+
+							<section class="cosasAlimentos panel spotlight barraCustomMedia left" style="background-color:black;"> </section>
+							<section class="cosasAlimentos panel spotlight barraCustom3 left" style="background-color:#EEEEEE;" id="ivanAlimentos"> </section>
 
 						<!-- Copyright -->
 							<div style="color:#AAAAAA;" class="copyright">&copy; Ethereal. Design: <a target="_blank" href="https://html5up.net">HTML5 UP</a>.
@@ -399,6 +482,8 @@
 					desactivarCinctorres();
 					desactivarTable();
 					desactivarTetris();
+					desactivarTrickOrTreat();
+					desactivarAlimentos();
 				}
 				function desactivarAspida(){
 					for(let i = 0; i < cAspida.length; i++)
@@ -415,6 +500,8 @@
 					desactivarCinctorres();
 					desactivarTable();
 					desactivarTetris();
+					desactivarTrickOrTreat();
+					desactivarAlimentos();
 				}
 				function desactivarCovid(){
 					for(let i = 0; i < cCovid.length; i++)
@@ -431,6 +518,8 @@
 					desactivarCinctorres();
 					desactivarTable();
 					desactivarTetris();
+					desactivarTrickOrTreat();
+					desactivarAlimentos();
 				}
 				function desactivarFear(){
 					for(let i = 0; i < cFear.length; i++)
@@ -447,6 +536,8 @@
 					desactivarFear();
 					desactivarTable();
 					desactivarTetris();
+					desactivarTrickOrTreat();
+					desactivarAlimentos();
 				}
 				function desactivarCinctorres(){
 					for(let i = 0; i < cCinctorres.length; i++)
@@ -463,6 +554,8 @@
 					desactivarFear();
 					desactivarCinctorres();
 					desactivarTetris();
+					desactivarTrickOrTreat();
+					desactivarAlimentos();
 				}
 				function desactivarTable(){
 					for(let i = 0; i < cTable.length; i++)
@@ -479,10 +572,46 @@
 					desactivarFear();
 					desactivarCinctorres();
 					desactivarTable();
+					desactivarTrickOrTreat();
+					desactivarAlimentos();
 				}
 				function desactivarTetris(){
 					for(let i = 0; i < cTetris.length; i++)
 						cTetris[i].style.display="none";
+				}
+				let cTrick = document.getElementsByClassName("cosasTrickOrTreat");
+				desactivarTrickOrTreat();
+				function activarTrickOrTreat(){
+					for(let i = 0; i < cTrick.length; i++)
+						cTrick[i].style.display="flex";
+					desactivarAspida();
+					desactivarCovid();
+					desactivarFear();
+					desactivarCinctorres();
+					desactivarTable();
+					desactivarTetris();
+					desactivarAlimentos();
+				}
+				function desactivarTrickOrTreat(){
+					for(let i = 0; i < cTrick.length; i++)
+						cTrick[i].style.display="none";
+				}
+				let cAlimentos = document.getElementsByClassName("cosasAlimentos");
+				desactivarAlimentos();
+				function activarAlimentos(){
+					for(let i = 0; i < cAlimentos.length; i++)
+					cAlimentos[i].style.display="flex";
+					desactivarAspida();
+					desactivarCovid();
+					desactivarFear();
+					desactivarCinctorres();
+					desactivarTable();
+					desactivarTetris();
+					desactivarTrickOrTreat();
+				}
+				function desactivarAlimentos(){
+					for(let i = 0; i < cAlimentos.length; i++)
+						cAlimentos[i].style.display="none";
 				}
 			</script>
 
