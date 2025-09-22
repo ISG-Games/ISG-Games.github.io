@@ -1,44 +1,53 @@
 <!DOCTYPE HTML>
+
 <!--
 	Ethereal by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+
 <html>
 	<head>
 		<title>ISG Games - Portfolio</title>
 		<link rel="icon" type="image/x-icon" href="portfolio_assets/web_icon.ico">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="historial/assets/css/main.min.css" />
-		<noscript><link rel="stylesheet" href="historial/assets/css/noscript.min.css" /></noscript>
+		<link rel="stylesheet" href="historial/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="historial/assets/css/noscript.css" /></noscript>
 	</head>
+
 	<body class="is-preload">
 
-		<!-- PANEL ROTAR -->
+		<!--PANEL-ROTAR-MOVIL-->
 			<div id="panelROTAR" style="display:none;" data-position="center">
 				<img width="100%" src="portfolio_assets/screen_rotate.avif" alt="SCREEN ROTATE"/>
 			</div>
 
-		<!-- Page Wrapper -->
+		<!--PANEL-AMPLIAR-PC-->
+<!--
+			<div class="rectanguloScreen"></div>
+-->
+
+		<!--PANEL-TRASERO-FONDO-->
 			<div id="page-wrapper" style="cursor:crosshair">
 
-				<!-- Wrapper -->
+				<!--PANEL-FRONTAL-CONTENEDOR-DE-TODO-->
 					<div id="wrapper">
 
-						<div id="ivan0" style="color:#AAAAAA;" class="publicidad">
-							ISG-Games: <a target="_blank" href="https://isg-games.itch.io/">ITCH.IO</a>, 
-							<a target="_blank" href="https://gamejolt.com/@ISG_Games">GAMEJOLT</a>, 
+						<!--ENLACES-A-REDES-->
+						<div id="ivan0" style="color:#AAAAAA;font-size: 0.9rem;" class="publicidad">
+							Find me in:&nbsp;&nbsp;
+							<a target="_blank" href="">LINKEDIN</a>,&nbsp;&nbsp;
+							<a target="_blank" href="https://isg-games.itch.io/">ITCH.IO</a>,&nbsp;&nbsp;
+							<a target="_blank" href="https://gamejolt.com/@ISG_Games">GAMEJOLT</a>,&nbsp;&nbsp;
 							<a target="_blank" href="https://www.instagram.com/isg.games/">INSTAGRAM</a>
-							<!--PONER TANTOS ENLACES COMO QUIERA-->
 							<p></p>
 						</div>
 
-						<!-- PANEL INICIAL -->
+						<section class="panel spotlight initRelative left" style="background-color:black;"> </section>
 
-							<section class="panel spotlight barraCustomPeque left" style="background-color:black;"> </section>
-
-							<section class="panel spotlight custom2" style="background-color:black;">
+							<!--PANEL-INICIAL-->
+							<section class="panel spotlight initRelativeBig" style="background-color:black;">
 								<div class="content span-7">
 									<h4>Portfolio</h4>
 									<h1 class="major">ISG Games</h1>
@@ -49,52 +58,38 @@
 								</div>
 							</section>
 
-							<section class="panel spotlight barraBotones align-center" style="background-color:black;border: 2px solid #EEEEEE;">
-								<div class="content span-7" id="botonColumna1">
-									<img style="border: 2px solid #EEEEEE;" src="portfolio_assets/B_Aspida.avif" width="100%" alt="Aspida"/>
-									<ul class="actions" style="margin:0 auto;margin-top:10px;">
-										<li><a onclick="activarAspida()" href="#ivanAspida" class="button primary colorCustom circle icon solid fa-angle-right">Aspida</a></li>
-									</ul>
-									<br>
-									<img style="border: 2px solid #EEEEEE;" src="portfolio_assets/B_Covid.avif" width="100%" alt="Covid"/>
-									<ul class="actions" style="margin:0 auto;margin-top:10px;">
-										<li><a onclick="activarCovid()" href="#ivanCovid" class="button primary colorCustom circle icon solid fa-angle-right">Covid</a></li>
-									</ul>
+							<section class="panel spotlight initRelative align-center" style="background-color:black;">
+								<div class="content span-7" style="color:#EEEEEE;">
+									<a onclick="scrollToGamesStart()" class="button primary colorCustom circle icon solid fa-angle-right">GoToGames</a>
 								</div>
 							</section>
+
+							<section class="panel spotlight barraCustom3 left" style="background-color:#EEEEEE;"> </section>
+							<section class="panel spotlight initRelative5 left" style="background-color:black;"> </section>
+
+							<!--PANEL-GAMES-->
+							<section id="gamesStart" class="panel spotlight barraCustom3 left" style="background-color:#EEEEEE;"> </section>
+							<section class="panel spotlight barraCustomMedia align-center" style="background-color:black;">
+								<div class="content span-7">
+									<h1>G<br>
+										A<br>
+										M<br>
+										E<br>
+										S
+									</h1>
+								</div>
+							</section>
+
+							<!--BOTONES-DE-JUEGOS-DE-2-EN-2-->
 							<section class="panel spotlight barraBotones align-center" style="background-color:black;border: 2px solid #EEEEEE;">
 								<div class="content span-7" id="botonColumna2">
-									<img style="border: 2px solid #EEEEEE;" src="portfolio_assets/B_Fear.avif" width="100%" alt="Fear"/>
+
+									<img style="border: 2px solid #EEEEEE;" src="portfolio_assets/B_Alimentos.avif" width="100%" alt="Alimentos"/>
 									<ul class="actions" style="margin:0 auto;margin-top:10px;">
-										<li><a onclick="activarFear()" href="#ivanFear" class="button primary colorCustom circle icon solid fa-angle-right">Fear</a></li>
+										<li><a onclick="activarAlimentos()" href="#ivanAlimentos" class="button primary colorCustom circle icon solid fa-angle-right">Tetris</a></li>
 									</ul>
 									<br>
-									<img style="border: 2px solid #EEEEEE;" src="portfolio_assets/B_Cinctorres.avif" width="100%" alt="Cinctorres"/>
-									<ul class="actions" style="margin:0 auto;margin-top:10px;">
-										<li><a onclick="activarCinctorres()" href="#ivanCinctorres" class="button primary colorCustom circle icon solid fa-angle-right">Cinctorres</a></li>
-									</ul>
-								</div>
-							</section>
-							<section class="panel spotlight barraBotones align-center" style="background-color:black;border: 2px solid #EEEEEE;">
-								<div class="content span-7" id="botonColumna3">
-									<img style="border: 2px solid #EEEEEE;" src="portfolio_assets/B_Table.avif" width="100%" alt="Table"/>
-									<ul class="actions" style="margin:0 auto;margin-top:10px;">
-										<li><a onclick="activarTable()" href="#ivanTable" class="button primary colorCustom circle icon solid fa-angle-right">Table</a></li>
-									</ul>
-									<br>
-									<img style="border: 2px solid #EEEEEE;" src="portfolio_assets/B_Tetris.avif" width="100%" alt="Tetris"/>
-									<ul class="actions" style="margin:0 auto;margin-top:10px;">
-										<li><a onclick="activarTetris()" href="#ivanTetris" class="button primary colorCustom circle icon solid fa-angle-right">Tetris</a></li>
-									</ul>
-								</div>
-							</section>
-							<section class="panel spotlight barraBotones align-center" style="background-color:black;border: 2px solid #EEEEEE;">
-								<div class="content span-7" id="botonColumna4">
-									<img style="border: 2px solid #EEEEEE;" src="portfolio_assets/B_TrickOrTreat.avif" width="100%" alt="TrickOrTreat"/>
-									<ul class="actions" style="margin:0 auto;margin-top:10px;">
-										<li><a onclick="activarTrickOrTreat()" href="#ivanTrickOrTreat" class="button primary colorCustom circle icon solid fa-angle-right">Table</a></li>
-									</ul>
-									<br>
+
 									<img style="border: 2px solid #EEEEEE;" src="portfolio_assets/B_Alimentos.avif" width="100%" alt="Alimentos"/>
 									<ul class="actions" style="margin:0 auto;margin-top:10px;">
 										<li><a onclick="activarAlimentos()" href="#ivanAlimentos" class="button primary colorCustom circle icon solid fa-angle-right">Tetris</a></li>
@@ -102,17 +97,49 @@
 								</div>
 							</section>
 							<section class="panel spotlight barraBotones align-center" style="background-color:black;border: 2px solid #EEEEEE;">
+								<div class="content span-7" id="botonColumna3">
+
+									<img style="border: 2px solid #EEEEEE;" src="portfolio_assets/B_Cinctorres.avif" width="100%" alt="Cinctorres"/>
+									<ul class="actions" style="margin:0 auto;margin-top:10px;">
+										<li><a onclick="activarCinctorres()" href="#ivanCinctorres" class="button primary colorCustom circle icon solid fa-angle-right">Cinctorres</a></li>
+									</ul>
+									<br>
+
+									<img style="border: 2px solid #EEEEEE;" src="portfolio_assets/B_Tetris.avif" width="100%" alt="Tetris"/>
+									<ul class="actions" style="margin:0 auto;margin-top:10px;">
+										<li><a onclick="activarTetris()" href="#ivanTetris" class="button primary colorCustom circle icon solid fa-angle-right">Tetris</a></li>
+									</ul>
+								</div>
+							</section>
+							<section class="panel spotlight barraBotones align-center" style="background-color:black;border: 2px solid #EEEEEE;">
+								<div class="content span-7" id="botonColumna1">
+
+									<img style="border: 2px solid #EEEEEE;" src="portfolio_assets/B_Aspida.avif" width="100%" alt="Aspida"/>
+									<ul class="actions" style="margin:0 auto;margin-top:10px;">
+										<li><a onclick="activarAspida()" href="#ivanAspida" class="button primary colorCustom circle icon solid fa-angle-right">Aspida</a></li>
+									</ul>
+									<br>
+
+									<img style="border: 2px solid #EEEEEE;" src="portfolio_assets/B_Covid.avif" width="100%" alt="Covid"/>
+									<ul class="actions" style="margin:0 auto;margin-top:10px;">
+										<li><a onclick="activarCovid()" href="#ivanCovid" class="button primary colorCustom circle icon solid fa-angle-right">Covid</a></li>
+									</ul>
+								</div>
+							</section>
+
+							<!--ACCESO-AL-HISTORIAL
+							<section class="panel spotlight barraBotones align-center" style="background-color:black;border: 2px solid #EEEEEE;">
 								<div class="content span-7" style="color:#EEEEEE;">
 									If you want to see all my games, <b>literally all of them, </b>
 									<br>
 									<a class="button primary colorCustom" href="historial/index.html">CLICK HERE</a>
 								</div>
 							</section>
-
+-->
 							<section class="panel spotlight barraCustomEnorme left" style="background-color:black;"> </section>
 							<section class="panel spotlight barraCustom3 left" style="background-color:#EEEEEE;"> </section>
 
-							<!-- ----------------------------------PANEL-1------------------------------------>
+							<!-- ----------------------------------PANEL-1-PRUEBA-PLAY-Y-GIF-------------------------------->
 
 							<section class="cosasAspida panel spotlight barraCustomMedia left" style="background-color:black;"> </section>
 
@@ -120,7 +147,77 @@
 								<div class="gallery" style="border: 4px solid #EEEEEE;">
 								<!-- GALERIA -->
 									<div class="group span-3">
-										<a href="portfolio_assets/14_GIF.gif" class="image filtered span-3 bordecito" data-position="top"></a>
+										<a href="portfolio_assets/PRUEBAS/14_GIF.gif" class="image filtered span-3 bordecito" data-position="top"><img class="image filtered span-3 bordecito" data-position="top" src="portfolio_assets/PRUEBAS/VideoFondo_Aspida.png"/></a>
+										<a href="portfolio_assets/14_S1.png" class="image filtered span-1 bordecito" data-position="bottom"><img src="portfolio_assets/14_S1.png"/></a>
+										<a href="portfolio_assets/14_S2.png" class="image filtered span-1 bordecito" data-position="bottom"><img src="portfolio_assets/14_S2.png"/></a>
+										<a href="portfolio_assets/14_S3.png" class="image filtered span-1 bordecito" data-position="bottom"><img src="portfolio_assets/14_S3.png"/></a>
+									</div>
+								</div>
+							</section>
+
+							<section class="cosasAspida panel spotlight barraPortfolio align-center" style="background-color:black;">
+								<div class="content span-7">
+
+									<!-- TEXTO -->
+									<p><b>SOLO DEV</b> - GDEVELOP - PC, WEB - <b>2022</b></p>
+									<!-- BOTON -->
+									<iframe frameborder="0" src="https://itch.io/embed/2916872?border_width=5&amp;bg_color=000000&amp;fg_color=eeeeee&amp;link_color=ffffff&amp;border_color=eeeeee" width="560" height="175"><a href="https://isg-games.itch.io/aspida">Aspida by ISG-Games</a></iframe>
+									<p></p>
+									<!-- VOLVER -->
+									<ul class="actions" style="margin:0 auto;">
+										<li><a onclick="desactivarAspida()" href="#botonColumna1" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
+									</ul>
+
+								</div>
+							</section>
+
+							<section class="cosasAspida panel spotlight barraCustomMedia left" style="background-color:black;"> </section>
+							<section class="cosasAspida panel spotlight barraCustom3 left" style="background-color:#EEEEEE;" id="ivanAspida"> </section>
+
+							<!-- ----------------------------------PANEL-1-PRUEBA-SOLO-AVIF--------------------------------->
+
+							<section class="cosasAspida panel spotlight barraCustomMedia left" style="background-color:black;"> </section>
+
+							<section class="cosasAspida panel">
+								<div class="gallery" style="border: 4px solid #EEEEEE;">
+								<!-- GALERIA -->
+									<div class="group span-3">
+										<img class="image filtered span-3 bordecito" data-position="top" src="portfolio_assets/PRUEBAS/14_GIF.avif"/>
+										<a href="portfolio_assets/14_S1.png" class="image filtered span-1 bordecito" data-position="bottom"><img src="portfolio_assets/14_S1.png"/></a>
+										<a href="portfolio_assets/14_S2.png" class="image filtered span-1 bordecito" data-position="bottom"><img src="portfolio_assets/14_S2.png"/></a>
+										<a href="portfolio_assets/14_S3.png" class="image filtered span-1 bordecito" data-position="bottom"><img src="portfolio_assets/14_S3.png"/></a>
+									</div>
+								</div>
+							</section>
+
+							<section class="cosasAspida panel spotlight barraPortfolio align-center" style="background-color:black;">
+								<div class="content span-7">
+
+									<!-- TEXTO -->
+									<p><b>SOLO DEV</b> - GDEVELOP - PC, WEB - <b>2022</b></p>
+									<!-- BOTON -->
+									<iframe frameborder="0" src="https://itch.io/embed/2916872?border_width=5&amp;bg_color=000000&amp;fg_color=eeeeee&amp;link_color=ffffff&amp;border_color=eeeeee" width="560" height="175"><a href="https://isg-games.itch.io/aspida">Aspida by ISG-Games</a></iframe>
+									<p></p>
+									<!-- VOLVER -->
+									<ul class="actions" style="margin:0 auto;">
+										<li><a onclick="desactivarAspida()" href="#botonColumna1" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
+									</ul>
+
+								</div>
+							</section>
+
+							<section class="cosasAspida panel spotlight barraCustomMedia left" style="background-color:black;"> </section>
+							<section class="cosasAspida panel spotlight barraCustom3 left" style="background-color:#EEEEEE;" id="ivanAspida"> </section>
+
+							<!-- ----------------------------------PANEL-1-PRUEBA-AVIF-Y-GIF-------------------------------->
+
+							<section class="cosasAspida panel spotlight barraCustomMedia left" style="background-color:black;"> </section>
+
+							<section class="cosasAspida panel">
+								<div class="gallery" style="border: 4px solid #EEEEEE;">
+								<!-- GALERIA -->
+									<div class="group span-3">
+										<a href="portfolio_assets/PRUEBAS/14_GIF.gif" class="image filtered span-3 bordecito" data-position="top"><img class="image filtered span-3 bordecito" data-position="top" src="portfolio_assets/PRUEBAS/14_GIF.avif"/></a>
 										<a href="portfolio_assets/14_S1.png" class="image filtered span-1 bordecito" data-position="bottom"><img src="portfolio_assets/14_S1.png"/></a>
 										<a href="portfolio_assets/14_S2.png" class="image filtered span-1 bordecito" data-position="bottom"><img src="portfolio_assets/14_S2.png"/></a>
 										<a href="portfolio_assets/14_S3.png" class="image filtered span-1 bordecito" data-position="bottom"><img src="portfolio_assets/14_S3.png"/></a>
@@ -613,6 +710,35 @@
 					for(let i = 0; i < cAlimentos.length; i++)
 						cAlimentos[i].style.display="none";
 				}
+
+				function scrollToGamesStart() {
+					const target = document.getElementById("gamesStart");
+					if (target) {
+						target.scrollIntoView({
+						behavior: "smooth",
+						block: "nearest",   // para scroll vertical
+						inline: "start"     // para scroll horizontal: alinea al borde izquierdo
+						});
+					}
+				}
+				/*
+				window.location.hash = "botonColumna4";
+
+				document.getElementById("botonColumna4").scrollIntoView({ behavior: "smooth" });
+
+				function irABotonColumna4() {
+					setTimeout(() => {
+						window.location.hash = "botonColumna4";
+					}, 500); // 500 milisegundos = 0.5 segundos
+				}
+
+				*/
+
+				setInterval(() => {
+					console.log("Viewport width:", window.innerWidth, "px");
+					console.log("Viewport height:", window.innerHeight, "px");
+  				}, 1000); // cada segundo
+
 			</script>
 
 	</body>
