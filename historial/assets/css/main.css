@@ -2620,6 +2620,9 @@ input, select, textarea {
 		.panel.barraBotones {
 			width: 18rem;
 		}
+		.panel.barraBotonesMitad {
+			width: 9rem;
+		}
 		.panel.barraCustomPeque {
 			width: 3rem;
 		}
@@ -2640,6 +2643,10 @@ input, select, textarea {
 
 		.panel.barraCustom33 {
 			width: 0.4rem;
+		}
+
+		.panel.barraCustom333 {
+			width: 0.1rem;
 		}
 
 		.panel.customROTAR {
