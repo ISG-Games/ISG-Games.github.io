@@ -13,10 +13,10 @@
 				keyboardShortcuts: {
 
 					// If true, enables scrolling via keyboard shortcuts.
-						enabled: false,
+						enabled: true,
 
 					// Sets the distance to scroll when using the left/right arrow keys.
-						distance: 15
+						distance: 50
 
 				},
 
@@ -27,7 +27,7 @@
 						enabled: true,
 
 					// Sets the scroll wheel factor. (Ideally) a value between 0 and 1 (lower = slower scroll, higher = faster scroll).
-						factor: 0.5
+						factor: 1
 
 				},
 
@@ -583,7 +583,6 @@
 			})();
 
 	// Link scroll.
-	/*
 		$wrapper
 			.on('mousedown mouseup', 'a[href^="#"]', function(event) {
 
@@ -630,7 +629,7 @@
 						);
 
 			});
-	*/
+
 	// Gallery.
 		$('.gallery')
 			.on('click', 'a', function(event) {
