@@ -7,12 +7,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-.rectanguloScreen {
-  width: 30vw;   /* 50% del ancho de la pantalla */
-  height: 30vh;  /* 30% del alto de la pantalla */
-  border: 2px solid #80FFEC;  /* Contorno verde */
-}
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -2585,16 +2579,6 @@ input, select, textarea {
 			width: 42rem;
 		}
 
-		.panel.initRelative{
-			width: 15vw;
-		}
-		.panel.initRelative5{
-			width: 5vw;
-		}
-		.panel.initRelativeBig{
-			width: 60vw;
-		}
-
 		.panel.custom3 {
 			width: 63rem;
 		}
@@ -3602,7 +3586,7 @@ input, select, textarea {
 		-ms-flex-shrink: 1;
 		flex-shrink: 1;
 		height: 100%;
-		padding: 5vw;
+		padding: 5rem;
 	}
 
 		@media screen and (orientation: portrait) {
