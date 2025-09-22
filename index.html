@@ -60,7 +60,7 @@
 
 							<section class="panel spotlight initRelative align-center" style="background-color:black;">
 								<div class="content span-7" style="color:#EEEEEE;">
-									<a onclick="scrollToGamesStart()" class="button primary colorCustom circle icon solid fa-angle-right">GoToGames</a>
+									<a onclick="IrAPanelInicialJuegos()" class="button primary colorCustom circle icon solid fa-angle-right">GoToGames</a>
 								</div>
 							</section>
 
@@ -68,7 +68,7 @@
 							<section class="panel spotlight initRelative5 left" style="background-color:black;"> </section>
 
 							<!--PANEL-GAMES-->
-							<section id="gamesStart" class="panel spotlight barraCustom3 left" style="background-color:#EEEEEE;"> </section>
+							<section class="gamesStart panel spotlight barraCustom3 left" style="background-color:#EEEEEE;"> </section>
 							<section class="panel spotlight barraCustomMedia align-center" style="background-color:black;">
 								<div class="content span-7">
 									<h1>G<br>
@@ -89,7 +89,7 @@
 
 									<img style="border: 2px solid #EEEEEE;" src="portfolio_assets/B_Alimentos.avif" width="100%" alt="Alimentos"/>
 									<ul class="actions" style="margin:0 auto;margin-top:10px;">
-										<li><a onclick="activarAlimentos()" href="#ivanAlimentos" class="button primary colorCustom circle icon solid fa-angle-right">Tetris</a></li>
+										<li><a onclick="ActivarPanelJuego(_JUEGOS.ALIMENTOS)" href="#ivanAlimentos" class="button primary colorCustom circle icon solid fa-angle-right">Tetris</a></li>
 									</ul>
 								</div>
 							</section>
@@ -98,13 +98,13 @@
 
 									<img style="border: 2px solid #EEEEEE;" src="portfolio_assets/B_Cinctorres.avif" width="100%" alt="Cinctorres"/>
 									<ul class="actions" style="margin:0 auto;margin-top:10px;">
-										<li><a onclick="activarCinctorres()" href="#ivanCinctorres" class="button primary colorCustom circle icon solid fa-angle-right">Cinctorres</a></li>
+										<li><a onclick="ActivarPanelJuego(_JUEGOS.CINCTORRES)" href="#ivanCinctorres" class="button primary colorCustom circle icon solid fa-angle-right">Cinctorres</a></li>
 									</ul>
 									<br>
 
 									<img style="border: 2px solid #EEEEEE;" src="portfolio_assets/B_Tetris.avif" width="100%" alt="Tetris"/>
 									<ul class="actions" style="margin:0 auto;margin-top:10px;">
-										<li><a onclick="activarTetris()" href="#ivanTetris" class="button primary colorCustom circle icon solid fa-angle-right">Tetris</a></li>
+										<li><a onclick="ActivarPanelJuego(_JUEGOS.TETRIS)" href="#ivanTetris" class="button primary colorCustom circle icon solid fa-angle-right">Tetris</a></li>
 									</ul>
 								</div>
 							</section>
@@ -113,18 +113,17 @@
 
 									<img style="border: 2px solid #EEEEEE;" src="portfolio_assets/B_Aspida.avif" width="100%" alt="Aspida"/>
 									<ul class="actions" style="margin:0 auto;margin-top:10px;">
-										<li><a onclick="activarAspida()" href="#ivanAspida" class="button primary colorCustom circle icon solid fa-angle-right">Aspida</a></li>
+										<li><a onclick="ActivarPanelJuego(_JUEGOS.ASPIDA)" href="#ivanAspida" class="button primary colorCustom circle icon solid fa-angle-right">Aspida</a></li>
 									</ul>
 									<br>
 
 									<img style="border: 2px solid #EEEEEE;" src="portfolio_assets/B_Covid.avif" width="100%" alt="Covid"/>
 									<ul class="actions" style="margin:0 auto;margin-top:10px;">
-										<li><a onclick="activarCovid()" href="#ivanCovid" class="button primary colorCustom circle icon solid fa-angle-right">Covid</a></li>
+										<li><a onclick="ActivarPanelJuego(_JUEGOS.COVID)" href="#ivanCovid" class="button primary colorCustom circle icon solid fa-angle-right">Covid</a></li>
 									</ul>
 								</div>
 							</section>
 
-							<!--ACCESO-AL-HISTORIAL
 							<section class="panel spotlight barraBotones align-center" style="background-color:black;border: 2px solid #EEEEEE;">
 								<div class="content span-7" style="color:#EEEEEE;">
 									If you want to see all my games, <b>literally all of them, </b>
@@ -132,9 +131,9 @@
 									<a class="button primary colorCustom" href="historial/index.html">CLICK HERE</a>
 								</div>
 							</section>
--->
-							<section class="panel spotlight barraCustomEnorme left" style="background-color:black;"> </section>
-							<section class="panel spotlight barraCustom3 left" style="background-color:#EEEEEE;"> </section>
+
+							<section class="cosasJuegos panel spotlight barraBotones left" style="background-color:black;"> </section>
+							<section class="cosasJuegos panel spotlight barraCustom3 left" style="background-color:#EEEEEE;"> </section>
 
 							<!--PANELES-CON-3-CAPTURAS-Y-UN-AVIF-Y-UN-GIF-->
 
@@ -163,7 +162,7 @@
 									<p></p>
 									<!-- VOLVER -->
 									<ul class="actions" style="margin:0 auto;">
-										<li><a onclick="desactivarAspida()" href="#botonColumna1" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
+										<li><a onclick="DesactivarPanelJuego(_JUEGOS.ASPIDA)" href="#botonColumna1" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
 									</ul>
 
 								</div>
@@ -198,7 +197,7 @@
 									<p></p>
 									<!-- VOLVER -->
 									<ul class="actions" style="margin:0 auto;">
-										<li><a onclick="desactivarCovid()" href="#botonColumna1" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
+										<li><a onclick="DesactivarPanelJuego(_JUEGOS.COVID)" href="#botonColumna1" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
 									</ul>
 
 								</div>
@@ -233,7 +232,7 @@
 									<p></p>
 									<!-- VOLVER -->
 									<ul class="actions" style="margin:0 auto;">
-										<li><a onclick="desactivarCinctorres()" href="#botonColumna2" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
+										<li><a onclick="DesactivarPanelJuego(_JUEGOS.CINCTORRES)" href="#botonColumna2" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
 									</ul>
 
 								</div>
@@ -268,7 +267,7 @@
 									<p></p>
 									<!-- VOLVER -->
 									<ul class="actions" style="margin:0 auto;">
-										<li><a onclick="desactivarTetris()" href="#botonColumna3" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
+										<li><a onclick="DesactivarPanelJuego(_JUEGOS.TETRIS)" href="#botonColumna3" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
 									</ul>
 
 								</div>
@@ -303,7 +302,7 @@
 									<p></p>
 									<!-- VOLVER -->
 									<ul class="actions" style="margin:0 auto;">
-										<li><a onclick="desactivarAlimentos()" href="#botonColumna4" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
+										<li><a onclick="DesactivarPanelJuego(_JUEGOS.ALIMENTOS)" href="#botonColumna4" class="button primary colorCustom circle icon solid fa-angle-left">Previous</a></li>
 									</ul>
 
 								</div>
@@ -311,6 +310,39 @@
 
 							<section class="cosasAlimentos panel spotlight barraCustomMedia left" style="background-color:black;"> </section>
 							<section class="cosasAlimentos panel spotlight barraCustom3 left" style="background-color:#EEEEEE;" id="ivanAlimentos"> </section>
+
+							<!--PANEL-ABOUT-ME-->
+							<section class="panel spotlight barraBotones align-center" style="background-color:black;">
+								<div class="content span-7" style="color:#EEEEEE;">
+									<a onclick="IrAPanelInicialAboutMe()" class="button primary colorCustom circle icon solid fa-angle-right">GoToGames</a>
+								</div>
+							</section>
+							<section class="panel spotlight barraCustom3 left" style="background-color:#EEEEEE;"> </section>
+
+							<section class="aboutMe panel spotlight barraCustom3 left" style="background-color:#EEEEEE;"> </section>
+							<section class="panel spotlight barraCustomMedia align-center" style="background-color:black;">
+								<div class="content span-7">
+									<h2>A<br>
+										B<br>
+										O<br>
+										U<br>
+										T<br>
+										<br>
+										M<br>
+										E
+									</h2>
+								</div>
+							</section>
+
+							<section class="panel spotlight initRelativeBig" style="background-color:black;">
+								<div class="content span-7">
+									Find me in:&nbsp;&nbsp;
+							<a target="_blank" href="https://linkedin.com/in/ivan-safon-gil">LINKEDIN</a>,&nbsp;&nbsp;
+							<a target="_blank" href="https://isg-games.itch.io/">ITCH.IO</a>,&nbsp;&nbsp;
+							<a target="_blank" href="https://gamejolt.com/@ISG_Games">GAMEJOLT</a>,&nbsp;&nbsp;
+							<a target="_blank" href="https://www.instagram.com/isg.games/">INSTAGRAM</a>
+								</div>
+							</section>
 
 							<!--COPYRIGHT-->
 							<div style="color:#AAAAAA;" class="copyright">&copy; Ethereal. Design: <a target="_blank" href="https://html5up.net">HTML5 UP</a>.
@@ -328,240 +360,181 @@
 			<script src="historial/assets/js/main.js"></script>
 
 			<script>
-			//COSAS DISPOSITIVOS Y ROTACION---------------------------------------------------------------------------------------------------------------
-				let orientacionCorrecta = true;
 
-				let navegador = navigator.userAgent;
-				console.log("Device: "+navegador);
-				let rotar = document.getElementById("panelROTAR");
-				let pagina = document.getElementById("page-wrapper");
+				//COSAS PAGINA (DISPOSITIVOS Y ROTACION)---------------------------------------------------------------------------------------------------------------
 
-				if(esMovil()){
-					console.log("Mobile");
-					detectarORIENTACION();
-					window.addEventListener("orientationchange", function(){cambiarORIENTACION();} );
-				}
-				else{
-					console.log("No mobile");
-				}
+				let _dispositivo = navigator.userAgent
 
-				function esMovil(){
-					return navigator.userAgent.match(/Android/i) ||
-						   navigator.userAgent.match(/iPad/i) ||
-						   navigator.userAgent.match(/webOs/i) ||
-						   navigator.userAgent.match(/iPod/i) ||
-						   navigator.userAgent.match(/iPhone/i) ||
-						   navigator.userAgent.match(/BlackBerry/i) ||
-						   navigator.userAgent.match(/Windows Phone/i)
-				}
-				function ponerPANEL(){
-					//rotar.style.visibility="visible";
-					rotar.style.display="flex";
-					pagina.style.display="none";
-				}
-				function quitarPANEL(){
-					//rotar.style.visibility="hidden";
-					rotar.style.display="none";
-					pagina.style.display="flex";
-				}
-				function detectarORIENTACION(){
-					if(screen.availHeight > screen.availWidth){
-						console.log("Detecting orientation: Portrait");
-						ponerPANEL();
-						orientacionCorrecta=false;
+				let _panelRotarMovil = document.getElementById("panelROTAR")
+				let _panelPortfolio = document.getElementById("page-wrapper")
+
+				let _orientacionActualEsLandscape = true
+
+				InicializarPagina()
+
+				function InicializarPagina()
+				{
+					console.log("DEVICE: "+_dispositivo)
+
+					if(DetectarMovil())
+					{
+						console.log("MOBILE DEVICE")
+
+						if(DetectarOrientacionMovil())
+						{
+							console.log("PORTRAIT ORIENTATION")
+							_orientacionActualEsLandscape=false
+
+							ActivarPanelRotarMovil()
+						}
+						else
+						{
+							console.log("LANDSCAPE ORIENTATION")
+							_orientacionActualEsLandscape=true;
+
+							DesactivarPanelRotarMovil();
+						}
+
+						window.addEventListener("orientationchange", function(){EventoRotarMovil()} )
 					}
-					else{
-						console.log("Detecting orientation: Landscape");
-						quitarPANEL();
-						orientacionCorrecta=true;
-					}
-				}
-				function cambiarORIENTACION(){
-					if(orientacionCorrecta){
-						console.log("Portrait");
-						ponerPANEL();
-						orientacionCorrecta=false;
-					}
-					else{
-						console.log("Landscape");
-						quitarPANEL();
-						orientacionCorrecta=true;
+					else
+					{
+						console.log("NO MOBILE DEVICE")
 					}
 				}
 
-				//COSAS BOTONES Y PANELES---------------------------------------------------------------------------------------------------------------
-				//console.log(cAspida);
-				//console.log(cAspida.length);
-				let cAspida = document.getElementsByClassName("cosasAspida");
-				desactivarAspida();
-				function activarAspida(){
-					for(let i = 0; i < cAspida.length; i++)
-						cAspida[i].style.display="flex";
-					desactivarCovid();
-					desactivarFear();
-					desactivarCinctorres();
-					desactivarTable();
-					desactivarTetris();
-					desactivarTrickOrTreat();
-					desactivarAlimentos();
-				}
-				function desactivarAspida(){
-					for(let i = 0; i < cAspida.length; i++)
-						cAspida[i].style.display="none";
+				function DetectarMovil()
+				{
+					return _dispositivo.match(/Android/i) ||
+						   _dispositivo.match(/iPad/i) ||
+						   _dispositivo.match(/webOs/i) ||
+						   _dispositivo.match(/iPod/i) ||
+						   _dispositivo.match(/iPhone/i) ||
+						   _dispositivo.match(/BlackBerry/i) ||
+						   _dispositivo.match(/Windows Phone/i)
 				}
 
-				let cCovid = document.getElementsByClassName("cosasCovid");
-				desactivarCovid();
-				function activarCovid(){
-					for(let i = 0; i < cCovid.length; i++)
-						cCovid[i].style.display="flex";
-					desactivarAspida();
-					desactivarFear();
-					desactivarCinctorres();
-					desactivarTable();
-					desactivarTetris();
-					desactivarTrickOrTreat();
-					desactivarAlimentos();
-				}
-				function desactivarCovid(){
-					for(let i = 0; i < cCovid.length; i++)
-						cCovid[i].style.display="none";
+				function DetectarOrientacionMovil()
+				{
+					return screen.availHeight > screen.availWidth;
 				}
 
-				let cFear = document.getElementsByClassName("cosasFear");
-				desactivarFear();
-				function activarFear(){
-					for(let i = 0; i < cFear.length; i++)
-						cFear[i].style.display="flex";
-					desactivarAspida();
-					desactivarCovid();
-					desactivarCinctorres();
-					desactivarTable();
-					desactivarTetris();
-					desactivarTrickOrTreat();
-					desactivarAlimentos();
-				}
-				function desactivarFear(){
-					for(let i = 0; i < cFear.length; i++)
-						cFear[i].style.display="none";
+				function ActivarPanelRotarMovil()
+				{
+					_panelRotarMovil.style.display="flex"
+					_panelPortfolio.style.display="none"
 				}
 
-				let cCinctorres = document.getElementsByClassName("cosasCinctorres");
-				desactivarCinctorres();
-				function activarCinctorres(){
-					for(let i = 0; i < cCinctorres.length; i++)
-						cCinctorres[i].style.display="flex";
-					desactivarAspida();
-					desactivarCovid();
-					desactivarFear();
-					desactivarTable();
-					desactivarTetris();
-					desactivarTrickOrTreat();
-					desactivarAlimentos();
-				}
-				function desactivarCinctorres(){
-					for(let i = 0; i < cCinctorres.length; i++)
-						cCinctorres[i].style.display="none";
+				function DesactivarPanelRotarMovil()
+				{
+					_panelRotarMovil.style.display="none"
+					_panelPortfolio.style.display="flex"
 				}
 
-				let cTable = document.getElementsByClassName("cosasTable");
-				desactivarTable();
-				function activarTable(){
-					for(let i = 0; i < cTable.length; i++)
-						cTable[i].style.display="flex";
-					desactivarAspida();
-					desactivarCovid();
-					desactivarFear();
-					desactivarCinctorres();
-					desactivarTetris();
-					desactivarTrickOrTreat();
-					desactivarAlimentos();
-				}
-				function desactivarTable(){
-					for(let i = 0; i < cTable.length; i++)
-						cTable[i].style.display="none";
-				}
+				function EventoRotarMovil()
+				{
+					if(_orientacionActualEsLandscape)
+					{
+						console.log("PORTRAIT")
+						_orientacionActualEsLandscape=false
 
-				let cTetris = document.getElementsByClassName("cosasTetris");
-				desactivarTetris();
-				function activarTetris(){
-					for(let i = 0; i < cTetris.length; i++)
-						cTetris[i].style.display="flex";
-					desactivarAspida();
-					desactivarCovid();
-					desactivarFear();
-					desactivarCinctorres();
-					desactivarTable();
-					desactivarTrickOrTreat();
-					desactivarAlimentos();
-				}
-				function desactivarTetris(){
-					for(let i = 0; i < cTetris.length; i++)
-						cTetris[i].style.display="none";
-				}
-				let cTrick = document.getElementsByClassName("cosasTrickOrTreat");
-				desactivarTrickOrTreat();
-				function activarTrickOrTreat(){
-					for(let i = 0; i < cTrick.length; i++)
-						cTrick[i].style.display="flex";
-					desactivarAspida();
-					desactivarCovid();
-					desactivarFear();
-					desactivarCinctorres();
-					desactivarTable();
-					desactivarTetris();
-					desactivarAlimentos();
-				}
-				function desactivarTrickOrTreat(){
-					for(let i = 0; i < cTrick.length; i++)
-						cTrick[i].style.display="none";
-				}
-				let cAlimentos = document.getElementsByClassName("cosasAlimentos");
-				desactivarAlimentos();
-				function activarAlimentos(){
-					for(let i = 0; i < cAlimentos.length; i++)
-					cAlimentos[i].style.display="flex";
-					desactivarAspida();
-					desactivarCovid();
-					desactivarFear();
-					desactivarCinctorres();
-					desactivarTable();
-					desactivarTetris();
-					desactivarTrickOrTreat();
-				}
-				function desactivarAlimentos(){
-					for(let i = 0; i < cAlimentos.length; i++)
-						cAlimentos[i].style.display="none";
-				}
-
-				function scrollToGamesStart() {
-					const target = document.getElementById("gamesStart");
-					if (target) {
-						target.scrollIntoView({
-						behavior: "smooth",
-						block: "nearest",   // para scroll vertical
-						inline: "start"     // para scroll horizontal: alinea al borde izquierdo
-						});
+						ActivarPanelRotarMovil()
 					}
+					else
+					{
+						console.log("LANDSCAPE")
+						_orientacionActualEsLandscape=true
+
+						DesactivarPanelRotarMovil()
+					}
+				}
+
+				//COSAS JUEGOS (BOTONES Y PANELES)---------------------------------------------------------------------------------------------------------------
+
+				let _JUEGOS =
+				{
+					TODOS: document.getElementsByClassName("cosasJuegos"),
+					ASPIDA: document.getElementsByClassName("cosasAspida"),
+					COVID: document.getElementsByClassName("cosasCovid"),
+					CINCTORRES: document.getElementsByClassName("cosasCinctorres"),
+					TETRIS: document.getElementsByClassName("cosasTetris"),
+					ALIMENTOS: document.getElementsByClassName("cosasAlimentos")
+				}
+
+				InicializarJuegos()
+
+				function InicializarJuegos()
+				{
+					DesactivarPanelJuego()
+				}
+
+				function ActivarPanelJuego(elementosJuego)
+				{
+					DesactivarPanelJuego()
+
+					for(let i = 0; i < elementosJuego.length; i++)
+					{
+						elementosJuego[i].style.display="flex"
+					}
+
+					for(let i = 0; i < _JUEGOS.TODOS.length; i++)
+					{
+						_JUEGOS.TODOS[i].style.display="flex"
+					}
+				}
+
+				function DesactivarPanelJuego(elementosJuego)
+				{
+					if(elementosJuego)
+					{
+						for(let i = 0; i < elementosJuego.length; i++)
+						{
+							elementosJuego[i].style.display="none"
+						}
+					}
+					else
+					{
+						for(let juego in _JUEGOS)
+						{
+							for(let i = 0; i < _JUEGOS[juego].length; i++)
+							{
+								_JUEGOS[juego][i].style.display="none"
+							}
+						}
+					}
+
+					for(let i = 0; i < _JUEGOS.TODOS.length; i++)
+					{
+						_JUEGOS.TODOS[i].style.display="none"
+					}
+				}
+
+				function IrAPanelInicialJuegos()
+				{
+					//ir al elemento (dejandolo a la izquierda)
+					document.getElementsByClassName("gamesStart")[0].scrollIntoView({inline: "start"})
+
+					//Ir al elemento (dejandolo a la derecha, por defecto)
+					//window.location.hash = "botonColumna4";
+				}
+
+				function IrAPanelInicialAboutMe()
+				{
+					document.getElementsByClassName("aboutMe")[0].scrollIntoView({inline: "start"})
 				}
 				/*
-				window.location.hash = "botonColumna4";
-
-				document.getElementById("botonColumna4").scrollIntoView({ behavior: "smooth" });
-
 				function irABotonColumna4() {
 					setTimeout(() => {
 						window.location.hash = "botonColumna4";
 					}, 500); // 500 milisegundos = 0.5 segundos
 				}
 
-				*/
-
 				setInterval(() => {
 					console.log("Viewport width:", window.innerWidth, "px");
 					console.log("Viewport height:", window.innerHeight, "px");
   				}, 1000); // cada segundo
 
+				*/
 			</script>
 
 	</body>
