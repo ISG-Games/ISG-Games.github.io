@@ -1986,7 +1986,7 @@ input, select, textarea {
 	}
 
 	.bordecito{
-		border: 2px solid #EEEEEE;
+		border: 3px solid #EEEEEE;
 	}
 
 	@media screen and (max-width: 736px) {
