@@ -2593,15 +2593,22 @@ input, select, textarea {
 		.panel.custom2 {
 			width: 42rem;
 		}
-		.panel.initRelative5{
+		.panel.anchoPanelRelativo5{
 			width: 5vw;
 		}
-		.panel.initRelativeBig{
+		.panel.anchoPanelRelativo10{
+			width: 10vw;
+		}
+		.panel.anchoPanelRelativoInicial{
 			width: max(36rem,60vw);
 		}
 
 		.panel.custom3 {
 			width: 63rem;
+		}
+
+		.panel.anchoPanelTextoAboutMe {
+			width: 52em;
 		}
 
 		.panel.custom4 {
@@ -2625,7 +2632,7 @@ input, select, textarea {
 		.panel.barraBotones {
 			width: 18rem;
 		}
-		.panel.barraBotonesMitad {
+		.panel.anchoPanelConFlecha {
 			width: 9rem;
 		}
 		.panel.barraCustomPeque {
