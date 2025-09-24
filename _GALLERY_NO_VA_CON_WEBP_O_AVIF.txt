@@ -1,14 +1,29 @@
+EDGE NO MUESTRA AVIF
+
+-
 PNG > AVIF
 https://cloudinary.com/tools/png-to-avif
 
+-
 ACELERAR VIDEO
 https://online-video-cutter.com/es/change-video-speed
 
+-
 VIDEO > GIF
 https://ezgif.com/video-to-gif
 
+-
 GIF > AVIF (MEJOR VIDEO > AVIF)
 https://ezgif.com/gif-to-avif/ezgif-5812eb6264a43.gif.html
 
+-
 CALCULAR OPTIMIZACION
 https://pagespeed.web.dev/analysis/https-isg-games-github-io/eoghmhj0ym?form_factor=mobile
+
+-
+VIDEOS HISTORIAL:
+https://ezgif.com/merge-videos
+
+Video > Save
+
+To Gif > End Time, Original 800px, 10-12-16 fps
